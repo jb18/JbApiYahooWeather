@@ -1,5 +1,5 @@
 {
-    "name": "jb/ApiYahooWeather",
+    "name": "jb/api-yahoo-weather",
     "description": "A library to call Yahoo Weather Api. Just give the woeid code which correspond of your city",
     "type": "library",
     "keywords": ["yahoo api","weather"],

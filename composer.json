@@ -19,6 +19,5 @@
             "Jb\\ApiYahooWeather": ""
         }
     },
-    "target-dir": "Jb/ApiYahooWeather",
     "minimum-stability": "dev"
 }

@@ -3,7 +3,7 @@
     "description": "A library to call Yahoo Weather Api. Just give the woeid code which correspond of your city",
     "type": "library",
     "keywords": ["yahoo api","weather"],
-    "homepage": "",
+    "homepage": "https://github.com/jb18/JbApiYahooWeather",
     "license": "Apache-2.0",
     "authors": [
         {

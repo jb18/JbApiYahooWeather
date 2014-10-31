@@ -39,15 +39,15 @@ class ApiYahooWeather {
         return $this->lastResponse;
     }
 
-    public function get_lastResponse($toJson=false) {
+    public function getLastResponse($toJson=false) {
         return ($toJson)?json_encode($this->lastResponse):$this->lastResponse;
     }
     
-    public function set_lastResponse($data){
+    public function setLastResponse($data){
         $this->lastResponse = $data;
     }
 
-    public function get_temperature($with_unit = false) {
+    public function getTemperature($with_unit = false) {
         if (!$this->lastResponse || !isset($this->lastResponse['item']['condition']['temp'])) {
             return "";
         }
@@ -59,7 +59,7 @@ class ApiYahooWeather {
         return $return;
     }
     
-    public function get_location(){
+    public function getLocation(){
         if (!$this->lastResponse || !isset($this->lastResponse["location"]["city"])) {
             return "";
         }
@@ -67,7 +67,7 @@ class ApiYahooWeather {
         return $this->lastResponse["location"]["city"];
     }
     
-     public function get_forecast(){
+     public function getForecast(){
         if (!$this->lastResponse || !isset($this->lastResponse["item"]["forecast"])) {
             return array();
         }

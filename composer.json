@@ -1,0 +1,24 @@
+{
+    "name": "jb/ApiYahooWeather",
+    "description": "A library to call Yahoo Weather Api. Just give the woeid code which correspond of your city",
+    "type": "library",
+    "keywords": ["yahoo api","weather"],
+    "homepage": "",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Jean-Baptiste AUDEBERT",
+            "email": "audebert.jb@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Jb\\ApiYahooWeather": ""
+        }
+    },
+    "target-dir": "Jb/ApiYahooWeather",
+    "minimum-stability": "dev"
+}

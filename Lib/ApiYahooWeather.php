@@ -6,8 +6,8 @@ use Goutte\Client;
 
 class ApiYahooWeather {
     
-    const urlBase = 'http://query.yahooapis.com/v1/public/yql?format=json&q=';
-    const urlQuery = 'select * from weather.forecast where woeid="%s" and u="%s"';
+    const URL_BASE = 'http://query.yahooapis.com/v1/public/yql?format=json&q=';
+    const URL_QUERY = 'select * from weather.forecast where woeid="%s" and u="%s"';
 
     protected $client;
     protected $lastResponse;
@@ -23,7 +23,7 @@ class ApiYahooWeather {
             throw new \Exception("Please provide a woeid code", 1);
         }
         
-        $url = self::urlBase . urlencode(sprintf(self::urlQuery, $woeidUse, $unit));
+        $url = self::URL_BASE . urlencode(sprintf(self::URL_QUERY, $woeidUse, $unit));
         
         try {
             $response = $this->client->getClient()->get($url)->json();    
